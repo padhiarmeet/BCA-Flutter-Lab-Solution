@@ -1,15 +1,19 @@
 import 'dart:io';
-import 'dart:math';
 
-void main(){
+void main() {
+  stdout.write("Enter your weight in pounds: ");
+  double weightInPounds = double.parse(stdin.readLineSync()!);
 
-  //take height and weight as a input
-  stdout.write('Enter your height');
-  int height = int.parse(stdin.readLineSync()!);
+  stdout.write("Enter your height in inches: ");
+  double heightInInches = double.parse(stdin.readLineSync()!);
 
-  stdout.write('Enter your weight');
-  int weight = int.parse(stdin.readLineSync()!);
+  // Convert to metric units
+  double weightInKg = weightInPounds * 0.45359237;
+  double heightInMeters = heightInInches * 0.0254;
 
-  print(pow(height,2)/weight);
+  // Calculate BMI
+  double bmi = weightInKg / (heightInMeters * heightInMeters);
+
+  // Display BMI
+  print("Your BMI is: ${bmi}");
 }
-

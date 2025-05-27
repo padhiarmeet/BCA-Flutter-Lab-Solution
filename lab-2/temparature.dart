@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main(){
+
 //take one input of temperature
 int temp = int.parse(stdin.readLineSync()!);
 

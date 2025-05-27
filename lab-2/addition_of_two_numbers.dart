@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main(){
 
-  // take two input for addition
+  // take inputs for addition
 
   int num1 = int.parse(stdin.readLineSync()!);
   int num2 = int.parse(stdin.readLineSync()!);

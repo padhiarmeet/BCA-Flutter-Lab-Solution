@@ -9,7 +9,7 @@ void main(){
   stdout.write('Enter your age  : ');
   String age = stdin.readLineSync()!;
 
-  //concate both age and name
+  //concat both age and name
   String result = name + age;
   print(result);
 }
